@@ -18,16 +18,25 @@
     $('.gallery-js').owlCarousel({
         margin:30,
         loop:true,
-        autoWidth:true,
-        items:4
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                autoWidth:true,
+            }
+        }
     })
     $('.exhibitions-js').owlCarousel({
         center: true,
         items:2,
         loop:true,
-        margin:30,
         responsive:{
+            0:{
+                margin:10,
+            },
             600:{
+                margin:30,
                 items:3
             }
         }
